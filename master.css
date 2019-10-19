@@ -1,0 +1,300 @@
+body {
+  background-color: #e3fdfd;
+  font-family: 'Mali', Helvetica, sans-serif;
+  min-width: 320px;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* This is all about header style */
+header {
+  position: fixed;
+  top: 0;
+  min-height: 30px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.logo {
+  width: 40vw;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+#header-img {
+  width: auto;
+  height: 60px;
+  padding-left: 40px;
+}
+
+#nav-bar {
+  font-size: 1.2em;
+  font-weight: 400;
+  width: 37.6vw;
+}
+
+.nav-link {
+  padding-bottom: 5px;
+}
+
+#ul-nav-bar {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.landingPage{
+background-image: url("http://www.ensembletech.in/wp-content/uploads/2018/07/IoT-Portfolio.jpg");
+height:720px;
+
+}
+.landingText{
+  position: relative;
+  top:40%;
+  color: #f1f1f1;
+  width: 100%;
+  padding-top: -20rem;
+}
+#form{
+  position: relative;
+  top:40%;
+}
+#features {
+  padding-top: 4rem;
+}
+
+#titleSection {
+  padding-top: 6rem;
+  font-size: 3rem;
+  font-family: sans-serif;
+}
+#email{
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 600;
+  border: 0px black solid;
+  border-radius: 2px;
+  background: white;
+  cursor: pointer;
+}
+#features  {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: -2rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  text-align: center;
+}
+.image{
+  width: calc(100% / 1.8);
+}
+@media (max-width: 800px) {
+  #features {
+    flex-direction: column;
+  }
+
+  .content {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+.titleSection2{
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  font-size: 3rem;
+  font-family: sans-serif;
+}
+#customers{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width:100%;
+}
+.review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  text-align: center;
+}
+.icon{
+  width: 40%;
+}
+
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.product>.level {
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product>h2 {
+  margin-top: 15px;
+}
+
+.product>ol {
+  margin: 15px 0;
+}
+
+.product>ol>li {
+  padding: 5px 0;
+}
+
+.product>button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+}
+
+.product>button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 0px black solid;
+  border-radius: 2px;
+  background: white;
+  cursor: pointer;
+}
+
+
+/* footer section */
+footer {
+  margin-top: 30px;
+  background-color: #393e46;
+  padding: 3rem;
+  text-align: center;
+}
+
+.social {
+  width: 2rem;
+}
+
+/* this part is for responsiveness of website.
+Here I use media query & then declare different vallue*/
+@media (max-width: 650px) {
+  header {
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    margin-top: 5px;
+    width: 80%;
+    position: relative;
+  }
+
+  .logo>img {
+    margin: 0 auto;
+  }
+
+  #nav-bar {
+    margin-top: -5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+
+  nav>ul {
+    flex-direction: column;
+  }
+
+  .landing {
+    margin-top: 30%;
+  }
+}
+@media (max-width: 800px) {
+  #features {
+    flex-direction: column;
+  }
+
+  .content{
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 800px) {
+  #cutomers {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .icon{
+    width: 40%;
+  }
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
